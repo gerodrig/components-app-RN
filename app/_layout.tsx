@@ -43,7 +43,7 @@ export default function RootLayout() {
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack
           screenOptions={{
-            headerShown: false,
+            headerShadowVisible: false,
             contentStyle: {
               backgroundColor: backgroundColor,
             },
