@@ -1,5 +1,5 @@
 import { useThemeColor } from '@/hooks/useThemeColor';
-import { View, Text, ViewProps } from 'react-native';
+import { View, ViewProps } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 interface Props extends ViewProps {

@@ -1,11 +1,26 @@
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
 
-const Modal = () => {
+import ThemedView from '@/presentation/shared/ThemedView';
+import { Link, router } from 'expo-router';
+import ThemedButton from '@/presentation/shared/ThemedButton';
+
+const ModalScreen = () => {
   return (
-    <View>
-      <Text>Modal screen</Text>
-    </View>
+    <ThemedView>
+      <Link asChild href="/modal/modal-window" className="mx-4">
+        <Text className="my-2 text-xl text-ligh-text dark:text-dark-text">
+          Open Modal
+        </Text>
+      </Link>
+
+      <ThemedButton
+        onPress={() => router.push('/modal/modal-window')}
+        className="mx-4"
+      >
+        Open Modal
+      </ThemedButton>
+    </ThemedView>
   );
 };
 
-export default Modal;
+export default ModalScreen;
